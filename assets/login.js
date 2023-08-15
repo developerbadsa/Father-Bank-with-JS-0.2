@@ -1,11 +1,13 @@
 // capture all DOM element
 
-    const email = document.getElementById('email').value;
-    const passWord = document.getElementById('passWord').value; 
+
 
 
 // // login section
 document.getElementById('loginSubmit').addEventListener('click', function(){
+    const email = document.getElementById('email').value;
+    const passWord = document.getElementById('passWord').value; 
+
     if(!email){
         alert('Please provide Email for access')
     }
