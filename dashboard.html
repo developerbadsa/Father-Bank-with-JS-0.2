@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-500 h-screen py-24">
+<body class="bg-slate-500 h-screen py-24 px-10">
      <main class=" container mx-auto">
         <h1 class="text-4xl text-center text-white">Father of <span class="font-semibold text-amber-300">Bank</span></h1>
         <!-- Calculation and display section -->
-        <section class="grid grid-cols-3 gap-6 my-24">
+        <section class="grid md:grid-cols-3 grid-cols-1 gap-6 my-24">
             <!-- Box 1 -->
             <div class="bg-amber-500 text-white p-6 rounded-xl">
-                <div class="text-2xl">
+                <div class="md:text-2xl text-lg text-center">
                     Deposit <br>
                     <div class="text-4xl font-semibold mt-2">
                         $<span id="depositOutput">00</span>
@@ -23,7 +23,7 @@
             </div>
             <!-- box 2 -->
             <div class="bg-blue-500 text-white p-6 rounded-xl">
-                <div class="text-2xl">
+                <div class="md:text-2xl text-lg text-center">
                     Withdraw <br>
                     <div class="text-4xl font-semibold mt-2">
                         $<span id="withdrawOutput">00</span>
@@ -32,7 +32,7 @@
             </div>
             <!-- box 3 -->
             <div class="bg-green-600 text-white p-6 rounded-xl">
-                <div class="text-2xl">
+                <div class="md:text-2xl text-lg text-center">
                     Balance <br>
                     <div class="text-4xl font-semibold mt-2">
                         $<span id="BalanceOutput">1240</span>
@@ -41,8 +41,8 @@
             </div>
         </section>
         <!-- Input calculation -->
-        <section class="grid grid-cols-2 gap-8">
-            <div class="bg-green-600  p-6 rounded-xl flex flex-col">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-amber-300  p-6 rounded-xl flex flex-col">
 
                 <input id="deposite" class="input border text-amber-600 border-gray-50 mt-4 rounded" placeholder="Add Money to deposite" type="number">
                 <button id="depositeSubmit"  class="btn bg-blue-500 text-white text-xl mt-4 hover:bg-amber-400 border border-gray-400">Deposite</button>
