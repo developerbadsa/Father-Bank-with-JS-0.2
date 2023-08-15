@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father of Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-screen bg-slate-500">
+    <header>
+        
+    </header>
+    <main>
+        <section class="w-full">
+            <h1 class="text-4xl text-center text-white py-24">Father of <span class="font-semibold text-amber-300">Bank</span></h1>
+            <!-- login box -->
+            <div class="w-96 h-[376px] bg-slate-200 mx-auto items-center justify-center relative">
+                <h2 class="text-3xl text-center pt-6">Log In</h2>
+                <div class="flex flex-col mx-12 my-4">
+                    <input id="email" class="input border border-gray-50 mt-4 rounded" placeholder="email@gmail.com" type="email">
+                    <input id="passWord" class="input border border-gray-50 mt-4 rounded" placeholder="Password" type="password">
+                    <button id="loginSubmit" class="btn bg-blue-500 text-white text-xl mt-4 hover:bg-amber-400">LOG IN</button>
+                </div>
+                <div class="w-full bg-slate-300 py-4 absolute bottom-0 text-center">
+                    Don't you have any account? <span class=" text-blue-800 text-xl px-2 cursor-pointer">create now</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/login.js"></script>
+</body>
+</html>
